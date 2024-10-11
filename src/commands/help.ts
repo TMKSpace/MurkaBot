@@ -18,7 +18,7 @@ import { lstatSync } from "fs";
 import UserUtils from "../core/UserUtils";
 
 // Options
-const color = "#d18400";
+const color = "#0000FF";
 
 class CommandHelp {
   aliases: {

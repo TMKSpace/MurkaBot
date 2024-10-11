@@ -1,4 +1,6 @@
-# KitBot - An Bot for Discord made on Node.js
+# MurkaBot - Bot for Discord made on TypeScript
+
+### Original bot made by Murka124
 
 Made for OUR(TMKSpace) servers.
 
