@@ -1,14 +1,12 @@
 {
   "name": "murkabot",
   "version": "0.0.1",
-  "main": "./dist/main.js",
+  "main": "./main.ts",
   "repository": "https://github.com/kotisoff/kitbot.git",
   "author": "kotisoff",
   "license": "MIT",
   "scripts": {
-    "build": "tsc",
-    "start": "node --no-warnings ./",
-    "dev": "npm run build && npm run start",
+    "start": "ts-node ./",
     "update:core": "git submodule update --remote"
   },
   "dependencies": {

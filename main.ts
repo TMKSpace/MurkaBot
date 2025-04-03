@@ -18,15 +18,15 @@ import { timer } from "./core/Utils/reusedUtils";
 
 log.info("All modules loaded".gray);
 
-if (!fs.existsSync("../config.json")) {
+if (!fs.existsSync("./config.json")) {
   log.warn("Config not found.".gray);
-  fs.writeFileSync("../config.json", JSON.stringify(new Config()));
+  fs.writeFileSync("./config.json", JSON.stringify(new Config()));
   log.info("Created a new config!".green);
   process.exit(0);
 }
 
 const config = JSON.parse(
-  fs.readFileSync("../config.json").toString()
+  fs.readFileSync("./config.json").toString()
 ) as Config;
 const { token, intents } = config.bot;
 
